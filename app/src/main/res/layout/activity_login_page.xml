@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AccountActivity.LoginActivityPage">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="50dp"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:id="@+id/WelcomeTitle"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:text="Welcome to Qwickly"/>
+    <TextView
+        android:id="@+id/InfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="We give you a shopping experience like never before. Using the augmented reality and analytics , we bring you
+Qwickly will give you a real time shopping experience like never before."
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+
+        />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="
+center">
+    <Button
+        android:id="@+id/SignUpBtn"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonstylepink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Now "
+        />
+
+    <Button
+        android:id="@id/BtnVisit"
+        android:textColor="#fff"
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonstyle2"
+        android:text="Visit Our Site" />
+
+
+    ></LinearLayout>
+
+    
+
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Username"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="USERNAME" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="PASSWORD"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonstylepink"
+            android:drawableRight="@drawable/ic_send_black_24dp"
+            android:text="Log In"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</LinearLayout>

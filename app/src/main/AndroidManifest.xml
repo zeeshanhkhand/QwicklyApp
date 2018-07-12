@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zeeshanhussain.qwicklyapppart1">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/imageedit_1_6204205203"
+        android:label="Qwickly"
+        android:roundIcon="@drawable/imageedit_1_6204205203"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity android:name=".AccountActivity.LoginActivityPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AccountActivity.SignUpActivity" />
+        <activity android:name=".AccountActivity.PasswordReset" />
+        <activity android:name=".Functionality.barcodescan.ScanProduct" />
+        <activity android:name=".Functionality.barcodescan.ProductDisplay"></activity>
+    </application>
+
+</manifest>
